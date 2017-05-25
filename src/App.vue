@@ -1,23 +1,40 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+  <div class='app'>
+    <appheader></appheader>
+    <appcontainer></appcontainer>
+    <appfooter></appfooter>
   </div>
 </template>
 
-<script>
+<script type='text/ecmascript-6'>
+  import Header from '@/components/header/Header.vue'
+  import Footer from '@/components/footer/Footer.vue'
+  import Container from '@/components/container/Container.vue'
   export default {
-    name: 'app'
+    name: 'app',
+    data () {
+      return {}
+    },
+    components: {
+      'appheader': Header,
+      'appfooter': Footer,
+      'appcontainer': Container
+    }
   }
 </script>
 
-<style>
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+<style lang='less'>
+  .app {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: 100%;
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: #ccc;
   }
+
 </style>
