@@ -53,11 +53,12 @@
       return {
         styleobj: {
           'flex-wrap': 'wrap',
-          'justify-content': 'space-around',
+          'justify-content': 'space-between',
           'flex-direction': 'row',
           'align-items': 'center'
         },
-        styleobj11: {},
+        styleobj11: {
+        },
         styleobj12: {
           'justify-content': 'center'
         },
@@ -110,6 +111,8 @@
 <style lang="less">
   .layout {
     display: flex;
+    flex: 1;        
     flex-wrap: wrap;
+    justify-content: spece-round;
   }
 </style>

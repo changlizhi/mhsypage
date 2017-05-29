@@ -1,44 +1,20 @@
 <template>
   <div class='header'>
-    <div class='horizontal'>
-      <Menu mode='horizontal'
-            :theme='theme1'
-            active-name='1'>
-        <Menu-item name='1'>
-          <Icon type='ios-paper'></Icon>
-          内容管理
-        </Menu-item>
-        <Submenu name='2'>
-          <template slot='title'>
-            <Icon type='stats-bars'></Icon>
-            统计分析
-          </template>
-          <Menu-group title='使用'>
-            <Menu-item name='3-1'>新增和启动</Menu-item>
-            <Menu-item name='3-2'>活跃分析</Menu-item>
-            <Menu-item name='3-3'>时段分析</Menu-item>
-          </Menu-group>
-          <Menu-group title='留存'>
-            <Menu-item name='3-4'>用户留存</Menu-item>
-            <Menu-item name='3-5'>流失用户</Menu-item>
-          </Menu-group>
-        </Submenu>
-        <Submenu name='3'>
-          <template slot='title'>
-            <Icon type='stats-bars'></Icon>
-            统计分析
-          </template>
-          <Menu-group title='使用'>
-            <Menu-item name='3-1'>新增和启动</Menu-item>
-            <Menu-item name='3-2'>活跃分析</Menu-item>
-            <Menu-item name='3-3'>时段分析</Menu-item>
-          </Menu-group>
-          <Menu-group title='留存'>
-            <Menu-item name='3-4'>用户留存</Menu-item>
-            <Menu-item name='3-5'>流失用户</Menu-item>
-          </Menu-group>
-        </Submenu>
-      </Menu>
+    <div>
+      <ul class='nav'>
+        <router-link tag='li' class='hanfuxin' to='/indexhnone/hanfuxin'>
+            <a>汉服心</a>
+        </router-link>
+        <router-link tag='li' class='dongtai' to='/indexhf/dongtai'>
+            <a>汉服动态</a>
+        </router-link>
+        <router-link tag='li' class='liaotian' to='/indexhf/liaotian'>
+            <a>聊天</a>
+        </router-link>
+        <router-link tag='li' class='fuxing' to='/indexhf/fuxing'>
+            <a>汉服复兴</a>
+        </router-link>
+      </ul>
     </div>
   </div>
 </template>
@@ -46,7 +22,7 @@
   export default{
     data () {
       return {
-        theme1: 'light'
+        zhuti: 'light'
       }
     }
   }
@@ -54,19 +30,41 @@
 <style lang='less'>
   /*flex头部*/
   .header {
+    display: flex;
     height: 4rem;
     display: -webkit-box;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+    align-items: flex-end;
+    background: #b9ceee;
   }
 
-  .header * {
-    display: block;
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex: 100%;
+    padding-left: 10em;
+    padding-bottom: .3em;
+  }
+  .hanfuxin{
+    flex: 1;
+    justify-content: center;
+    width: 5em;
+  }
+  .dongtai{
+    flex: 1;
+    justify-content: center;
+    width: 10em;
+  }
+  .liaotian{
+    flex: 1;
+    justify-content: center;
+    width: 10em;
+  }
+  .fuxing{
+    flex: 1;
+    justify-content: center;
+    width: 10em;
   }
 
-  .horizontal {
-    width: 100%;
-  }
 
 </style>

@@ -1,19 +1,30 @@
 <template>
-  <div class='app'>
-    <router-view name='default'></router-view>
+  <div class='indexnone'>
+    <appcontainernone></appcontainernone>
+    <router-view name='Hanfuxin'></router-view>
   </div>
 </template>
 
 <script type='text/ecmascript-6'>
+  import Containernone from '@/components/container/Containernone.vue'
   export default {
     name: 'app',
-    created () {
+    data () {
+      return {}
+    },
+    components: {
+      'appcontainernone': Containernone
+    },
+    methods: {
+      logone () {
+        console.log('test log')
+      }
     }
   }
 </script>
 
 <style lang='less'>
-  .app {
+  .indexnone {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     height: 100%;

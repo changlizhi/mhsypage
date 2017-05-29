@@ -3,7 +3,7 @@
        :style='exstyle'>
     <div class='yuan'
          v-for='item in num'>
-      <router-link to='/'>
+      <router-link to='/indexhf'>
         <div class='href'></div>
       </router-link>
     </div>

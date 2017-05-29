@@ -1,7 +1,8 @@
 <template>
   <div class='container'>
     <div>
-      <useshaizi></useshaizi>
+      <router-link to='indexh'>indexh</router-link>
+      <expandheight></expandheight>
     </div>
   </div>
 </template>

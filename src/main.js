@@ -2,12 +2,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+// import App2 from './App2'
 import router from './router'
-import iView from 'iview'
-import '../themeset/index.less'
 Vue.config.productionTip = false
 Vue.config.devtools = true
-Vue.use(iView)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
