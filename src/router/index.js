@@ -11,12 +11,16 @@ import Hanfuxin from '@/components/hanfuxin/Hanfuxin'
 import Jianyi from '@/components/jianyi/Jianyi'
 import Liaotian from '@/components/liaotian/Liaotian'
 import Wode from '@/components/wode/Wode'
+import Containerf from '@/components/container/Containerf'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [{
+    path: '/containerf',
+    component: Containerf
+  }, {
     path: '/',
     name: 'default',
     // component: Indexnone
@@ -25,26 +29,24 @@ export default new Router({
     path: '/indexnone',
     name: 'Indexnone',
     component: Indexnone,
+    redirect: '/indexnone/hanfuxin',
     children: [{
-      path: 'indexnone/hanfuxin',
-      name: 'Hanfuxin',
+      path: 'hanfuxin',
       component: Hanfuxin
     }]
   }, {
     path: '/indexf',
     name: 'Indexf',
     component: Indexf,
+    redirect: '/indexf/jianyi',
     children: [{
-      path: '/indexf/jianyi',
-      name: 'Jianyi',
+      path: 'jianyi',
       component: Jianyi
     }, {
-      path: '/indexf/goumai',
-      name: 'Goumai',
+      path: 'goumai',
       component: Goumai
     }, {
-      path: '/indexf/wode',
-      name: 'Wode',
+      path: 'wode',
       component: Wode
     }]
   }, {
@@ -53,19 +55,16 @@ export default new Router({
     component: Indexh
   }, {
     path: '/indexhf',
-    name: 'Indexhf',
     component: Indexhf,
+    redirect: '/indexhf/dongtai',
     children: [{
-      path: '/indexhf/dongtai',
-      name: 'Dongtai',
+      path: 'dongtai',
       component: Dongtai
     }, {
-      path: '/indexhf/liaotian',
-      name: 'Liaotian',
+      path: 'liaotian',
       component: Liaotian
     }, {
-      path: '/indexhf/fuxing',
-      name: 'Fuxing',
+      path: 'fuxing',
       component: Fuxing
     }]
   }]

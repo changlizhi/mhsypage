@@ -1,17 +1,21 @@
 <template>
   <div class='footer'>
-    <div>
-       <ul class='foot-nav'>
-          <router-link tag='li' class='jianyi' to='/indexf/jianyi'>
-            <a>我要建议</a>
-          </router-link>
-          <router-link tag='li' class='goumai' to='/indexf/goumai'>
-            <a>购买支持</a>
-          </router-link>
-          <router-link tag='li' class='wode' to='/indexf/wode'>
-            <a>我的</a>
-          </router-link>
-        </ul>
+    <div class='footer-nav'>
+      <router-link to='/indexf/jianyi'>
+        <div class='nav-jianyi'>
+          <span>建议一下</span>
+        </div>
+      </router-link>
+      <router-link to='/indexf/goumai'>
+        <div class='nav-goumai'>
+          <span>我想买汉服</span>
+        </div>
+      </router-link>
+      <router-link to='/indexf/wode'>
+        <div class='nav-wode'>
+          <span>设置</span>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -29,7 +33,7 @@
     background: #b9cfff;
   }
 
-  .foot-nav {
+  .footer-nav {
     display: flex;
     flex: 1;
     justify-content: space-around;
@@ -37,24 +41,29 @@
     line-height: 2rem;
   }
 
-  .jianyi {
+  .nav-jianyi {
     display: flex;
-    margin-left: 5em;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex:1;
+    justify-content: space-around;
+    width: 10em;
   }
-  .goumai {
+  .nav-goumai {
     display: flex;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
+    justify-content: space-around;
+    width: 10em;
   }
-  .wode {
+  .nav-wode {
     display: flex;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
+    justify-content: space-around;
+    width: 10em;
   }
 
 </style>

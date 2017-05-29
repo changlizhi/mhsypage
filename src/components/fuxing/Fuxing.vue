@@ -11,7 +11,7 @@
   .fuxing{
     flex: 1;
     justify-content: center;
-    width: 5em;
+    width: 15em;
   }
 
 

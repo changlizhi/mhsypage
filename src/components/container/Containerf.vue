@@ -1,7 +1,9 @@
 <template>
-  <div class='container'>
+  <div class='containerf'>
     <div>
       <router-link to='/indexhf'>indexhf</router-link>
+      <router-view name='default'></router-view>
+      <expandheight></expandheight>
     </div>
   </div>
 </template>
@@ -16,7 +18,7 @@
   }
 </script>
 <style lang="less">
-  .container {
+  .containerf {
     position: relative;
     -webkit-box-flex: 1;
     -webkit-flex: 1;

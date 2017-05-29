@@ -2,7 +2,6 @@
   <div class='indexf'>
     <appheader></appheader>
     <appcontainerhf></appcontainerhf>
-    <router-view name='Jianyi'></router-view>
     <appfooter></appfooter>
 
   </div>

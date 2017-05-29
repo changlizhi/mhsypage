@@ -1,6 +1,6 @@
 <template>
   <div class='goumai'>
-    汉服复兴组件
+    购买支持组件
   </div>
 </template>
 <script type='text/ecmascript-6'>
@@ -11,7 +11,7 @@
   .goumai{
     flex: 1;
     justify-content: center;
-    width: 5em;
+    width: 15em;
   }
 
 

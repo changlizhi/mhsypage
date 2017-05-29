@@ -1,20 +1,26 @@
 <template>
   <div class='header'>
-    <div>
-      <ul class='nav'>
-        <router-link tag='li' class='hanfuxin' to='/indexhnone/hanfuxin'>
-            <a>汉服心</a>
-        </router-link>
-        <router-link tag='li' class='dongtai' to='/indexhf/dongtai'>
-            <a>汉服动态</a>
-        </router-link>
-        <router-link tag='li' class='liaotian' to='/indexhf/liaotian'>
-            <a>聊天</a>
-        </router-link>
-        <router-link tag='li' class='fuxing' to='/indexhf/fuxing'>
-            <a>汉服复兴</a>
-        </router-link>
-      </ul>
+    <div class='header-nav'>
+      <router-link to='/indexnone/hanfuxin'>
+        <div class='nav-hanfuxin'>
+          <span class='text'>汉服心</span>
+        </div>
+      </router-link>
+      <router-link to='/indexhf/dongtai'>
+        <div class='nav-dongtai'>
+            <span class='text'>汉服动态</span>
+        </div>
+      </router-link>
+      <router-link to='/indexhf/liaotian'>
+        <div class='nav-liaotian'>
+          <span class='text'>聊天</span>
+        </div>
+      </router-link>
+      <router-link to='/indexhf/fuxing'>
+        <div class='nav-fuxing'>
+          <span class='text'>汉服复兴</span>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -30,39 +36,48 @@
 <style lang='less'>
   /*flex头部*/
   .header {
+    overflow: hidden;
+    background: #b9caaa;
+  }
+
+  .header-nav {
     display: flex;
+    flex: 1;
+    justify-content: space-around;
     height: 4rem;
-    display: -webkit-box;
-    align-items: flex-end;
-    background: #b9ceee;
+    line-height: 6rem;
   }
-
-
-  .nav {
+  .nav-hanfuxin{
     display: flex;
-    justify-content: center;
-    flex: 100%;
-    padding-left: 10em;
-    padding-bottom: .3em;
-  }
-  .hanfuxin{
-    flex: 1;
-    justify-content: center;
-    width: 5em;
-  }
-  .dongtai{
-    flex: 1;
-    justify-content: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex:1;
+    justify-content: space-around;
     width: 10em;
   }
-  .liaotian{
-    flex: 1;
-    justify-content: center;
+  .nav-dongtai{
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex:1;
+    justify-content: space-around;
     width: 10em;
   }
-  .fuxing{
-    flex: 1;
-    justify-content: center;
+  .nav-liaotian{
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex:1;
+    justify-content: space-around;
+    width: 10em;
+  }
+  .nav-fuxing{
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex:1;
+    justify-content: space-around;
+    align-items: flex-end;
     width: 10em;
   }
 

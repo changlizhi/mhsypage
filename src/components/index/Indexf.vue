@@ -1,7 +1,6 @@
 <template>
   <div class='indexf'>
     <appcontainerf></appcontainerf>
-    <router-view name='Jianyi'></router-view>
     <appfooter></appfooter>
   </div>
 </template>

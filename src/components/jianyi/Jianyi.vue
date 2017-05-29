@@ -1,6 +1,6 @@
 <template>
   <div class='jianyi'>
-    汉服复兴组件
+    我要建议组件
   </div>
 </template>
 <script type='text/ecmascript-6'>
@@ -11,7 +11,7 @@
   .jianyi{
     flex: 1;
     justify-content: center;
-    width: 5em;
+    width: 15em;
   }
 
 

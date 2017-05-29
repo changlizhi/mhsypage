@@ -1,7 +1,6 @@
 <template>
   <div class='indexnone'>
     <appcontainernone></appcontainernone>
-    <router-view name='Hanfuxin'></router-view>
   </div>
 </template>
 
