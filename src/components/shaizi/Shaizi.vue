@@ -17,8 +17,8 @@
     }
   }
 </script>
-<style lang="less">
-  .shaizi {
+<style lang='stylus' rel='stylesheet/stylus'>
+  .shaizi
     display: flex;
     margin-left: 10px;
     margin-top: 10px;
@@ -26,19 +26,15 @@
     height: 120px;
     background: #e3e8ee;
     border-radius: 5%;
-  }
+    .yuan
+      width: 30px;
+      height: 30px;
+      margin-top: 2px;
+      margin-left: 2px;
+      background: #fff;
+      border-radius: 50%; 
+      .href
+        width: 100%;
+        height: 100%;
 
-  .yuan {
-    width: 30px;
-    height: 30px;
-    margin-top: 2px;
-    margin-left: 2px;
-    background: #fff;
-    border-radius: 50%;
-  }
-
-  .href {
-    width: 100%;
-    height: 100%;
-  }
 </style>

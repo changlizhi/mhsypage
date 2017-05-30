@@ -7,12 +7,9 @@
   export default{
   }
 </script>
-<style lang='less'>
-  .wode{
-    flex: 1;
-    justify-content: center;
-    width: 15em;
-  }
-
-
+<style lang='stylus' rel='stylesheet/stylus'>
+  .wode
+    flex: 1
+    justify-content: center
+    width: 15em
 </style>

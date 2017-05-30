@@ -7,12 +7,9 @@
   export default{
   }
 </script>
-<style lang='less'>
-  .fuxing{
-    flex: 1;
-    justify-content: center;
-    width: 15em;
-  }
-
-
+<style lang='stylus' rel='stylesheet/stylus'>
+  .fuxing
+    flex: 1
+    justify-content: center
+    width: 15em
 </style>

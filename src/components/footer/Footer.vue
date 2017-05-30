@@ -25,45 +25,37 @@
     }
     
 </script>
-<style lang='less'>
+<style lang='stylus' rel='stylesheet/stylus'>
 
   /*flex底部，按钮平均分布*/
-  .footer {
-    overflow: hidden;
-    background: #b9cfff;
-  }
-
-  .footer-nav {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    height: 2rem;
-    line-height: 2rem;
-  }
-
-  .nav-jianyi {
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex:1;
-    justify-content: space-around;
-    width: 10em;
-  }
-  .nav-goumai {
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    justify-content: space-around;
-    width: 10em;
-  }
-  .nav-wode {
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    justify-content: space-around;
-    width: 10em;
-  }
-
+  .footer 
+    overflow: hidden
+    background: #b9cfff
+    .footer-nav 
+      display: flex
+      flex: 1
+      justify-content: space-around
+      height: 2rem
+      line-height: 2rem
+      .nav-jianyi 
+        display: flex
+        -webkit-box-flex: 1
+        -webkit-flex: 1
+        flex:1
+        justify-content: space-around
+        width: 10em
+      .nav-goumai 
+        display: flex
+        -webkit-box-flex: 1
+        -webkit-flex: 1
+        flex: 1
+        justify-content: space-around
+        width: 10em
+      .nav-wode 
+        display: flex
+        -webkit-box-flex: 1
+        -webkit-flex: 1
+        flex: 1
+        justify-content: space-around
+        width: 10em
 </style>

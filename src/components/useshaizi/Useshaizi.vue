@@ -108,11 +108,11 @@
     }
   }
 </script>
-<style lang="less">
-  .layout {
-    display: flex;
-    flex: 1;        
-    flex-wrap: wrap;
-    justify-content: spece-round;
-  }
+<style lang='stylus' rel='stylesheet/stylus'>
+  .layout
+    display: flex
+    flex: 1
+    flex-wrap: wrap
+    justify-content: spece-round
+
 </style>

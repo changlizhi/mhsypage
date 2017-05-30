@@ -17,14 +17,13 @@
     }
   }
 </script>
-<style lang="less">
-  .containerhf {
-    position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    background-color: #ffeeae;
-  }
+<style lang='stylus' rel='stylesheet/stylus'>
+  .containerhf
+    position: relative
+    -webkit-box-flex: 1
+    -webkit-flex: 1
+    flex: 1
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    background-color: #ffeeae
 </style>
