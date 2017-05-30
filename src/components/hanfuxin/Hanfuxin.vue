@@ -6,8 +6,13 @@
         </router-link>
     </div>
     <div class='loginnav'>
-      <div class='nav-content'></div>
-      <div class='login'></div>
+      <div class='biaoti-wrapper'>
+        <div class='biaoti'><span class='timu'>欢迎来到汉服心</span></div>
+      </div>
+      <div class='neirong'>
+        <div class='nav-content'></div>
+        <div class='login'></div>
+      </div>
     </div>
   </div>
 </template>
@@ -35,23 +40,40 @@
       display: flex
       flex: 1
       background: #efaaaa
-      justify-content: center
-      align-items: center
+      flex-direction: column
       width: 100%
-      height: 600px
-      .nav-content
+      height: 50em
+      .biaoti-wrapper
+        display: flex
+        height: 5em
+        width: 100%
+        justify-content: center
+        align-items: center
+        .biaoti
+          display: flex
+          height: 100%
+          border-radius:  5em 5em 5em 5em / 5em 5em 5em 5em
+          justify-content: center
+          align-items: center
+          background: #fae123
+          width: 40%
+          .timu
+            font-size: 34px
+      .neirong
         display: flex
         flex: 1
-        height: 100%
-        background: #afeafe
-        border-radius: 5%
-      .login
-        display: flex
-        flex: 0.382
-        height: 100%
-        background: #efeefe
-        border-radius: 7%
-   
- 
-  
+        height: 45em
+        background: #e54333
+        .nav-content
+          display: flex
+          flex: 1
+          height: 100%
+          background: #afeafe
+          border-radius: 5%
+        .login
+          display: flex
+          flex: 0.382
+          height: 100%
+          background: #efeefe
+          border-radius: 7%
 </style>
