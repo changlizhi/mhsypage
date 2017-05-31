@@ -1,12 +1,18 @@
 <template>
-  <div class='app'>
-    <router-view name='default'></router-view>
-  </div>
+    <div class='app'>
+      <firecanvas class="fire"></firecanvas>
+      <router-view name='default'></router-view>
+    </div>
+  
 </template>
 
 <script type='text/ecmascript-6'>
+  import firecanvas from '@/components/firecanvas/Firecanvas'
   export default {
     name: 'app',
+    components: {
+      'firecanvas': firecanvas
+    },
     created () {
     }
   }
@@ -24,6 +30,14 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     background-color: #ccceee;
+  }
+  @media screen and (max-width: 440px) {
+      .fire {
+          display: none;
+      }
+      .app {
+          background: #000;
+      }
   }
 
 </style>

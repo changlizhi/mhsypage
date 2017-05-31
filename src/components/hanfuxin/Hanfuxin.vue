@@ -11,7 +11,9 @@
       </div>
       <div class='neirong'>
         <div class='nav-content'></div>
-        <div class='login'></div>
+        <div class='login'>
+          
+        </div>
       </div>
     </div>
   </div>
@@ -52,7 +54,7 @@
         .biaoti
           display: flex
           height: 100%
-          border-radius:  5em 5em 5em 5em / 5em 5em 5em 5em
+          border-radius:  1em 
           justify-content: center
           align-items: center
           background: #fae123
